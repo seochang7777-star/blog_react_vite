@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Modal = ({title, color,titlenum,setModal,setTitle}) => {
   // console.log(title[0])
-  const [input, setIinput]= useState("")
+  const [input, setInput]= useState("")
   return (
     <div className='modal' style={{backgroundColor :color}}>
     <h4>제목 : {title[titlenum]}</h4>
@@ -16,7 +16,7 @@ const Modal = ({title, color,titlenum,setModal,setTitle}) => {
       let copy = [...title]
       copy[titlenum] = input
       setTitle(copy)
-      setIinput('')
+      setInput('')
       }}>제목 수정</button><br />
 
     <button onClick={()=>{setModal(false)}}>닫기</button>
