@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Modal = ({title, color,titlenum,setModal,setTitle}) => {
   // console.log(title[0])
+  const [input, setIinput]= useState("")
   return (
     <div className='modal' style={{backgroundColor :color}}>
     <h4>제목 : {title[titlenum]}</h4>
